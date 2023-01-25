@@ -1,0 +1,57 @@
+:root {
+	/* Bright Mode */
+	--bgcolor: white;
+	--frostedColor:rgba(255, 255, 255, 0.65);
+	--fgcolor: black;
+	/* Dark Mode */
+	/* --bgcolor: black;
+	--fgcolor: white; */
+	/* Silly 3D */
+	/* --accent1: red;
+	--accent2: blue; */
+	/* Ocean Color */
+	--accent1: #185288;
+    --accent2: #3b88be;
+}
+
+@font-face {
+	font-family: "Round";
+	src: url(../fonts/Varela_Round/VarelaRound-Regular.ttf);
+}
+
+body {
+	background-color: var(--bgcolor);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(./elizabeth-lies-T9Gsevu_N8Y-unsplash.jpg);
+	color: var(--fgcolor);
+}
+
+.wrapShadow-text {
+	font-family: 'Round', cursive;
+	color: var(--bgcolor);
+	font-weight: 800;
+	text-shadow:
+		-1px -1px 3px var(--fgcolor),
+		-1px 1px 3px var(--accent1),
+		1px -1px 3px var(--accent2),
+		2px 2px 5px var(--fgcolor);
+	letter-spacing: 0.15rem;
+	word-spacing: 0.2rem;
+}
+
+.wrapShadow-box {
+	box-shadow:
+	-1px -1px 3px var(--fgcolor),
+	-1px 1px 3px var(--accent1),
+	1px -1px 3px var(--accent2),
+	2px 2px 5px var(--fgcolor);
+}
+
+.padded {
+	padding: 2%;
+}
+
+.frosted {
+	background-color: var(--frostedColor);
+}
